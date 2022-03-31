@@ -9,3 +9,9 @@ Card::Card(char r, char s)
   rank = r;
   suit = s;
 }
+
+void Card::setCard(char r, char s )
+{
+  rank = r;
+  suit = s;
+}
