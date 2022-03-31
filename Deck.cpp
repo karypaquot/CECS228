@@ -30,3 +30,9 @@ void Deck::refreshDeck()
   }
   topCard = 0;
 }
+
+Card Deck::deal()
+{
+  return deck[topCard++];
+  
+}
