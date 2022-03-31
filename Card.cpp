@@ -40,3 +40,11 @@ int Card::getValue()
     return 10;
   return 0;
 }
+
+void Card::showCard()
+{
+  if (rank == 'T')
+    cout << "10" << suit << ", ";
+  else
+    cout << rank << suit << ", ";
+}
