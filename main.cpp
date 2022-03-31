@@ -12,3 +12,22 @@
 #include <string>
 using namespace std;
 
+//Checks if the result/sum is prime or not
+bool isPrime(int n)
+{
+  int i = 0;
+  int result = 0;
+  for (i = 2; i <= n / 2; i++)
+  {
+    if (n % i == 0)
+    {
+      result = 1;
+      break;
+    }
+  }
+  if (result == 0 && n != 1)
+    return true;
+  else
+    return false;
+} 
+
