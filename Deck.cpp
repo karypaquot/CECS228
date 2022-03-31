@@ -53,3 +53,13 @@ int Deck::cardsLeft()
 {
   return 52 - topCard;
 }
+
+void Deck::showDeck()
+{
+  for (int x = 0; x < 52; x++)
+  {
+    if (x % 4 == 0)
+      cout << endl;
+    deck[x].showCard();
+  }
+}
