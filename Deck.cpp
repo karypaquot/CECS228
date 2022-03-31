@@ -36,3 +36,20 @@ Card Deck::deal()
   return deck[topCard++];
   
 }
+
+void Deck::shuffle()
+{
+  for(int s = 0; s < 150; s++){
+    int random1 = rand() % 52;
+    int random2 = rand() % 52;
+
+    Card chosen = deck[random1];
+    deck[random1] = deck[random2];
+    deck[random2] = chosen;
+  }
+}
+
+int Deck::cardsLeft()
+{
+  return 52 - topCard;
+}
